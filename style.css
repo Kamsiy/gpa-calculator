@@ -1,0 +1,135 @@
+/*-------------------------------------
+* Specific styles for the Gpa calculator
+* Project layout styles are in projects.css
+*--------------------------------------*/
+.template{
+  display: none;
+}
+.calc span{
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: white;
+}
+.content{
+  margin-top: 20px;
+}
+#gpa{
+  color: #00bde5;
+  font-size: 40px;
+}
+/* Headings */
+span.header{
+  margin-top: 50px;
+  font-size: 25px;
+  padding: 20px 0;
+  background: #007abd;
+}
+span.ash-header{
+  background: transparent;
+  padding: 0;
+  margin-top: 0;
+  color: black;
+}
+.ash{
+  padding: 20px 0;
+  background: #dbdbdb;
+  color: black;
+}
+
+.result-header{
+  font-size: 25px;
+  background: #00bde5;
+  padding: 10px 0;
+  color: black;
+}
+#overall{
+  background: #007abd;
+  padding: 50px 0;
+  font-size: 40px;
+}
+@media (max-width: 619px){
+  .result-header, .header{
+    font-size: 20px;
+  }
+}
+
+/* Calculator */
+table{
+  background: #f1f1f1;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+input, select{
+  text-align: center;
+  background: transparent;
+  border: 1px solid #dde2e7;
+  padding: 5px;
+}
+input:hover{
+  background: white;
+}
+input:focus, select:focus{
+  outline: black auto 2px;
+  text-align: left;
+  background: white;
+}
+select{
+  width: 160px;
+  text-align: center;
+}
+select::-ms-expand { 
+  display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+/* Buttons */
+.btn{
+  background: #f1f1f1;
+  padding-bottom:50px;
+}
+button.add:hover, .calculate:hover{
+  cursor: pointer;
+}
+button.add, .null, .calculate{
+  margin-top: 20px;
+  padding: 5px 10px;
+  color: cadetblue;
+  border: 1px solid cadetblue;
+  background: transparent;
+  width: 160px;
+  margin-left: 7%;
+  font-weight: 900;
+}
+.calculate{
+  color: rgb(226, 148, 2);
+  border-color: rgb(226, 148, 2);
+  margin-top: 20px;
+}
+.null{
+  background: #dde2e7;
+  border-color: #dbdbdb;
+}
+.null:focus{
+  outline: none;
+}
+.add-semester{
+  margin: 30px 0;
+  padding: 20px;
+  background: transparent;
+  display: block;
+  border: 1px solid #007abd;
+  color: #007abd;
+  font-weight: 600;
+  width: 100%;
+  font-size: 20px;
+}
+
+/* Breakpoints */
+
+@media (max-width: 640px){
+  input, select{
+    width: 60px;
+  }
+}

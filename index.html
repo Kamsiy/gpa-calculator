@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Basic GPA calculator"/>
+        <meta name="keywords" content="Kamsiyochukwu Ibeziako, gpa calculator, Kamsi, iowa state university gpa calculator">
+        <link rel="stylesheet" href=assets/projects.css>
+        <link rel="stylesheet" href=style.css>
+        <link rel="icon" href="assets/wave.png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>Gpa Calculator</title>
+    </head>
+    <body>
+        <header>
+            <div class="main-container">
+                <div class="name left">
+                    <a href="http://kamsiy.github.io/about">Kamsi Ibeziako</a>
+                </div>
+                <ul class="right nav">
+                    <li> <a href="http://kamsiy.github.io" class="active">Projects</a></li>
+                    <li><a href="http://kamsiy.github.io/about">About</a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <section class="portfolio">
+            <div class="main-container"style="padding-top:8px;">
+
+                <h1>Gpa Calculator</h1>
+                <h2 class="sub">Basic Gpa calculator to assist students estimate GPA using Iowa State University's Grading System</h2>
+                <span class="underline"></span>
+                <div class="calc">
+                    <div class="template">
+                        <span class="header">SEMESTER <data>1</data> </span> 
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">COURSE</th>
+                                    <th scope="col">CREDITS</th>
+                                    <th scope="col">GRADE</th>
+                                    <th scope="col">Pass / Fail</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <tr class="">
+                                    <td><input type="text" id="course"></td>
+                                    <td><input id="credits" min="0" placeholder="0" type="number"></td>
+                                    <td>
+                                        <select id="letter-grade" >
+                                        <option value=""></option>
+                                        <option value="A">A</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B">B</option>
+                                        <option value="B-">B-</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="C-">C-</option>
+                                        <option value="D+">D+</option>
+                                        <option value="D">D</option>
+                                        <option value="D-">D-</option>
+                                        <option value="F">F</option>
+                                        </select>
+                                    </td>
+                                    <td><input value="YES" name="pnpst" type="checkbox" id="pass-fail"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" id="course"></td>
+                                    <td><input id="credits" min="0" placeholder="0" type="number"></td>
+                                    <td>
+                                        <select id="letter-grade" >
+                                        <option value=""></option>
+                                        <option value="A">A</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B">B</option>
+                                        <option value="B-">B-</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="C-">C-</option>
+                                        <option value="D+">D+</option>
+                                        <option value="D">D</option>
+                                        <option value="D-">D-</option>
+                                        <option value="F">F</option>
+                                        </select>
+                                    </td>
+                                    <td><input value="YES" name="pnpst" type="checkbox" id="pass-fail"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" id="course"></td>
+                                    <td><input id="credits" min="0" placeholder="0" type="number"></td>
+                                    <td>
+                                        <select id="letter-grade" >
+                                        <option value=""></option>
+                                        <option value="A">A</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B">B</option>
+                                        <option value="B-">B-</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="C-">C-</option>
+                                        <option value="D+">D+</option>
+                                        <option value="D">D</option>
+                                        <option value="D-">D-</option>
+                                        <option value="F">F</option>
+                                        </select>
+                                    </td>
+                                    <td><input value="YES" name="pnpst" type="checkbox" id="pass-fail"></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="text" id="course"></td>
+                                    <td><input id="credits" min="0" placeholder="0" type="number"></td>
+                                    <td>
+                                        <select id="letter-grade" >
+                                        <option value=""></option>
+                                        <option value="A">A</option>
+                                        <option value="A-">A-</option>
+                                        <option value="B+">B+</option>
+                                        <option value="B">B</option>
+                                        <option value="B-">B-</option>
+                                        <option value="C+">C+</option>
+                                        <option value="C">C</option>
+                                        <option value="C-">C-</option>
+                                        <option value="D+">D+</option>
+                                        <option value="D">D</option>
+                                        <option value="D-">D-</option>
+                                        <option value="F">F</option>
+                                        </select>
+                                    </td>
+                                    <td><input value="YES" name="pnpst" type="checkbox" id="pass-fail"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="btn">
+                            <button type="button" class="add"  name="button"> + Add Class</button>
+                            <button class="calculate"> Calculate </button>
+                        </div>
+                        <div class="ash">
+                            <span class="header ash-header">YOUR SEMESTER GPA IS</span>
+                            <span id="gpa">--</span>
+                        </div> 
+                    </div>
+                    <button class="add-semester">+ ADD SEMESTER</button>
+
+                    <div class="result">
+                        <span class="result-header">YOUR OVERALL GPA IS</span>
+                        <span id="overall">--</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="main-container">
+                <span class="left sub">Kamsi Ibeziako &copy; 2018</span>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
